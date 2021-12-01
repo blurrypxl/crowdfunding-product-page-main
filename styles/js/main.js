@@ -94,19 +94,19 @@ for (let i = 0; i < radioBtn.length; i++) {
 let rewardBtn = document.querySelectorAll('.reward');
 let modalBtn = document.querySelectorAll('.modal-btn');
 let modalBox = document.querySelector('.modal-container');
-// let bodyContainer = document.getElementById('body-container');
+let bodyContainer = document.getElementById('body-container');
 
 for (let i = 0; i < modalBtn.length; i++) {
   modalBtn[i].onclick = () => {
     toggleBtn(modalBox, 'open');
-    // toggleBtn(bodyContainer, 'noScrolls');
+    toggleBtn(bodyContainer, 'noScrolls');
   };
 }
 
 for (let i = 0; i < rewardBtn.length; i++) {
   rewardBtn[i].onclick = () => {
     toggleBtn(modalBox, 'open');
-    // toggleBtn(bodyContainer, 'noScrolls');
+    toggleBtn(bodyContainer, 'noScrolls');
     radioBtn[i+1].checked = true;
     radioButton(i+1);
   };
@@ -114,7 +114,7 @@ for (let i = 0; i < rewardBtn.length; i++) {
 
 gotIt.onclick = () => {
   toggleBtn(modalBox, 'open');
-  // toggleBtn(bodyContainer, 'noScrolls');
+  toggleBtn(bodyContainer, 'noScrolls');
   successModal.style.display = 'none';
   modalPledge.style.display = 'grid';
 }
