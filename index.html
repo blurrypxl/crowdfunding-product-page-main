@@ -14,12 +14,12 @@
 
   <body id="body-container">
     <nav class="navbar">
-      <a href="#">
-        <svg width="128" height="20" xmlns="http://www.w3.org/2000/svg">
+      <a class="crowdfund-logo" href="#">
+        <!-- <svg class="crowdfund-logo" width="128" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M7.272 20c2.69 0 5.022-1.4 6.202-3.54L9.88 14.402c-.439.96-1.454 1.537-2.662 1.537-1.783 0-3.1-1.29-3.1-3.184 0-1.893 1.317-3.183 3.1-3.183 1.208 0 2.196.576 2.662 1.537l3.595-2.086c-1.18-2.113-3.54-3.512-6.202-3.512C3.101 5.51 0 8.666 0 12.755 0 16.845 3.101 20 7.272 20zm11.367-.384v-6.202c0-2.717 2.415-3.403 4.116-3.129V5.62c-1.728 0-3.567.878-4.116 2.717V5.895h-4.116v13.72h4.116zM30.116 20c4.034 0 7.272-3.156 7.272-7.245s-3.238-7.244-7.272-7.244c-4.034 0-7.272 3.155-7.272 7.244 0 4.09 3.238 7.245 7.272 7.245zm0-4.007c-1.784 0-3.156-1.29-3.156-3.238s1.372-3.238 3.156-3.238 3.156 1.29 3.156 3.238c0 1.949-1.372 3.238-3.156 3.238zm15.181 3.623l2.196-7.327 2.195 7.327h3.842l4.39-13.721h-4.39l-1.976 7.354-2.14-7.354h-3.842l-2.14 7.354-1.977-7.354h-4.39l4.39 13.72h3.842zM64.156 20c1.839 0 3.183-.631 4.089-1.674v1.29h4.116V.406h-4.116v6.778c-.906-1.042-2.25-1.673-4.089-1.673-3.595 0-6.559 3.155-6.559 7.244 0 4.09 2.964 7.245 6.559 7.245zm.823-3.897c-1.893 0-3.265-1.29-3.265-3.348s1.372-3.348 3.265-3.348c1.894 0 3.266 1.29 3.266 3.348s-1.372 3.348-3.266 3.348zm14.66 3.513v-9.77h2.552V5.895H79.64c0-1.592 1.016-2.058 2.552-1.921V.022c-4.555-.274-6.668 2.03-6.668 5.873h-1.839v3.951h1.839v9.77h4.116zm8.266.384c1.811 0 3.184-.659 3.925-1.674v1.29h4.116V5.895H91.83v7.491c0 1.949-1.043 2.827-2.553 2.827-1.317 0-2.387-.796-2.387-2.497V5.895h-4.116v8.424c0 3.705 2.36 5.681 5.131 5.681zm14.44-.384v-7.492c0-1.948 1.044-2.826 2.553-2.826 1.317 0 2.387.795 2.387 2.497v7.82h4.117v-8.424c0-3.705-2.36-5.68-5.132-5.68-1.811 0-3.183.658-3.924 1.673v-1.29h-4.117v13.722h4.117zm17.02.384c1.84 0 3.184-.631 4.09-1.674v1.29h4.116V.406h-4.116v6.778c-.906-1.042-2.25-1.673-4.09-1.673-3.594 0-6.558 3.155-6.558 7.244 0 4.09 2.964 7.245 6.559 7.245zm.824-3.897c-1.893 0-3.265-1.29-3.265-3.348s1.372-3.348 3.265-3.348c1.894 0 3.266 1.29 3.266 3.348s-1.372 3.348-3.266 3.348z"
             fill="#FFF" fill-rule="nonzero" />
-        </svg>
+        </svg> -->
       </a>
 
       <button class="toggle"></button>
@@ -58,32 +58,40 @@
           </svg>
         </div>
         <h1 class="h1-title padding-text">Mastercraft Bamboo Monitor Riser</h1>
-        <p class="gap-text padding-text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+        <p class="gap-text padding-text align-text-c">A beautiful & handcrafted monitor stand to reduce neck and eye
+          strain.</p>
 
         <div class="btn-box">
           <button class="btn btn-mcyan modal-btn">Back this project</button>
-          <button id="bookmark" class="btn anim-pop"></button>
+          <div id="bookmark">
+            <button class="bookmark-icon btn anim-pop"></button>
+            <div class="bookmark-desktop">
+              <p>Bookmark</p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="content-box align-text-c">
-        <div class="numbers-box">
-          <h2 class="h2-title gap-text">$<span id="collected-funds" class="h2-title">89,914</span></h2>
-          <p>of $<span id="target-funds">100,000</span> backed</p>
-        </div>
+        <div class="nums-container">
+          <div class="numbers-box">
+            <h2 class="h2-title gap-text">$<span id="collected-funds" class="h2-title">89,914</span></h2>
+            <p>of $<span id="target-funds">100,000</span> backed</p>
+          </div>
 
-        <div class="line-bottom-30"></div>
+          <div class="line-30"></div>
 
-        <div class="numbers-box">
-          <h2 id="total-backers" class="h2-title gap-text">5,007</h2>
-          <p>total backers</p>
-        </div>
+          <div class="numbers-box">
+            <h2 id="total-backers" class="h2-title gap-text">5,007</h2>
+            <p>total backers</p>
+          </div>
 
-        <div class="line-bottom-30"></div>
+          <div class="line-30"></div>
 
-        <div class="numbers-box">
-          <h2 class="h2-title gap-text">56</h2>
-          <p>days left</p>
+          <div class="numbers-box">
+            <h2 class="h2-title gap-text">56</h2>
+            <p>days left</p>
+          </div>
         </div>
 
         <div class="numbers-box">
@@ -96,33 +104,33 @@
       <div class="content-box grid-contents gap-text">
         <h3 class="h3-title">About this project</h3>
 
-        <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more
-          comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and
-          make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+        <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a
+          morecomfortable viewing height. Placing your monitor at eye level has the potential to improve your posture
+          andmake you more comfortable while at work, helping you stay focused on the task at hand.</p>
 
         <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to
           allow notepads, pens, and USB sticks to be stored under the stand.</p>
 
         <div class="content-box grid-contents">
-          <div>
-            <h4 class="h4-title">Bamboo Stand</h4>
+          <div class="title-box">
+            <h4 class="h4-title text-black">Bamboo Stand</h4>
             <p class="text-mcyan text-700">Pledge $25 or more</p>
           </div>
 
           <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-            you’ll be added to a special Backer member list.</p>
+            you`ll be added to a special Backer member list.</p>
 
           <p><span class="h2-title text-700">101</span> left</p>
           <button class="btn btn-mcyan reward">Select Reward</button>
         </div>
 
         <div class="content-box grid-contents">
-          <div>
-            <h4 class="h4-title">Black Edition Stand</h4>
+          <div class="title-box">
+            <h4 class="h4-title text-black">Black Edition Stand</h4>
             <p class="text-mcyan text-700">Pledge $75 or more</p>
           </div>
 
-          <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+          <p>You get a Black Special Edition computer stand and a personal thank you. You`ll be added to our Backer
             member list. Shipping is included.</p>
 
           <p><span class="h2-title text-700">64</span> left</p>
@@ -130,16 +138,16 @@
         </div>
 
         <div class="content-box grid-contents opacity-50">
-          <div>
-            <h4 class="h4-title">Mahogany Special Edition</h4>
+          <div class="title-box">
+            <h4 class="h4-title text-black">Mahogany Special Edition</h4>
             <p class="text-mcyan text-700">Pledge $200 or more</p>
           </div>
 
-          <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to
+          <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You`ll be added to
             our Backer member list. Shipping is included.</p>
 
           <p><span class="h2-title text-700">0</span> left</p>
-          <button class="btn btn-dgrey reward">Out of Stock</button>
+          <button class="btn btn-dgrey reward" disabled>Out of Stock</button>
         </div>
       </div>
     </div>
@@ -153,118 +161,145 @@
         </div>
 
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-
-        <div class="pledge-card content-box grid-contents">
-          <div class="flex-row-start">
-            <label class="radio-input">
-              <input class="radio-btn" type="radio" id="no-reward" name="pledge" value="pledge with no reward">
-              <span class="radio-control"></span>
-            </label>
-            <label class="h4-title text-700" for="no-reward">Pledge with no reward</label>
-          </div>
-
-          <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed
-            up to receive product updates via email.</p>
-        </div>
-
-        <div class="pledge-card content-box grid-contents">
-          <div class="flex-row-start">
-            <label class="radio-input">
-              <input class="radio-btn" type="radio" name="pledge" id="bamboo-stand" value="bamboo stand">
-              <span class="radio-control"></span>
-            </label>
-
-            <label class="flex-column-start" for="bamboo-stand">
-              <h4 class="h4-title text-700">Bamboo Stand</h4>
-              <p class="text-mcyan text-700">Pledge $25 or more</p>
-            </label>
-          </div>
-
-          <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-            you’ll be added to a special Backer member list.</p>
-
-          <p><span class="h3-title text-700">101 </span> left</p>
-
-          <!-- Selected pledge start -->
-          <div class="confirm-box line-top-100 grid-contents align-text-c padding-t-20">
-            <p>Enter your pledge</p>
-            <div class="flex-row-between w-100 padding-t-20">
-              <form class="input-box flex-row-center">
-                <p class="text-700">$ &nbsp;&nbsp;<span><input class="input-number h4-title text-700" type="number" name="bamboo-stand-pledge" id="bamboo-stand-pledge" min="25" value="25"></span></p>
-              </form>
-              <button class="btn btn-mcyan submit">Continue</button>
+        <div class="pledge-box">
+          <div class="pledge-card content-box grid-contents">
+            <div class="flex-row-start">
+              <label class="radio-input">
+                <input class="radio-btn" type="radio" id="no-reward" name="pledge" value="pledge with no reward">
+                <span class="radio-control"></span>
+              </label>
+              <label class="h4-title text-black text-700" for="no-reward">Pledge with no reward</label>
             </div>
-            <p class="warning-text"></p>
-          </div>
-          <!-- Selected pledge end -->
-        </div>
 
-        <div class="pledge-card content-box grid-contents">
-          <div class="flex-row-start">
-            <label class="radio-input">
-              <input class="radio-btn" type="radio" name="pledge" id="black-stand" value="black edition stand">
-              <span class="radio-control"></span>
-            </label>
-
-            <label class="flex-column-start" for="black-stand">
-              <h4 class="h4-title text-700">Black Edition Stand</h4>
-              <p class="text-mcyan text-700">Pledge $75 or more</p>
-            </label>
+            <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be
+              signed
+              up to receive product updates via email.</p>
           </div>
 
-          <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-            member list. Shipping is included.</p>
-
-          <p><span class="h3-title text-700">64 </span> left</p>
-
-          <!-- Selected pledge start -->
-          <div class="confirm-box line-top-100 grid-contents align-text-c padding-t-20">
-            <p>Enter your pledge</p>
-            <div class="flex-row-between w-100 padding-t-20">
-              <form class="input-box flex-row-center">
-                <p class="text-700">$ &nbsp;&nbsp;<span><input class="input-number h4-title text-700" type="number" name="black-edition-stand" id="black-edition-stand" min="75" value="75"></span></p>
-              </form>
-              <button class="btn btn-mcyan submit">Continue</button>
+          <div class="pledge-card content-box grid-contents">
+            <div class="flex-row-start">
+              <label class="radio-input">
+                <input class="radio-btn" type="radio" name="pledge" id="bamboo-stand" value="bamboo stand">
+                <span class="radio-control"></span>
+              </label>
+              <div class="flex-row-between w-100">
+                <label class="text-radio" for="bamboo-stand">
+                  <h4 class="h4-title text-black text-700">Bamboo Stand</h4>
+                  <h4 class="h4-title text-mcyan text-700">Pledge $25 or more</h4>
+                </label>
+                <p class="total-pledge-desktop"><span class="h3-title text-700">101 </span> left</p>
+              </div>
             </div>
-            <p class="warning-text"></p>
+
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+              you`ll be added to a special Backer member list.</p>
+
+            <p class="total-pledge-mobile"><span class="h3-title text-700">101 </span> left</p>
+
+            <!-- Selected pledge start -->
+            <div class="confirm-box line-top-100 align-text-c padding-t-20">
+              <div class="title-confirm-box">
+                <p>Enter your pledge</p>
+              </div>
+
+              <div class="submit-box">
+                <form class="input-box flex-row-center">
+                  <p class="text-700">$ &nbsp;&nbsp;<span><input class="input-number h4-title text-black text-700"
+                        type="number" name="bamboo-stand-pledge" id="bamboo-stand-pledge" min="25" value="25"></span>
+                  </p>
+                </form>
+                <button class="btn btn-mcyan submit">Continue</button>
+              </div>
+              <p class="warning-text"></p>
+            </div>
+            <!-- Selected pledge end -->
           </div>
-          <!-- Selected pledge end -->
-        </div>
 
-        <div class="pledge-card content-box grid-contents opacity-50">
-          <div class="flex-row-start">
-            <label class="radio-input">
-              <input class="radio-btn" type="radio" name="mahogany-special-edition" id="mahogany-special-edition"
-                disabled>
-              <span class="radio-control"></span>
-            </label>
+          <div class="pledge-card content-box grid-contents">
+            <div class="flex-row-start">
+              <label class="radio-input">
+                <input class="radio-btn" type="radio" name="pledge" id="black-stand" value="black edition stand">
+                <span class="radio-control"></span>
+              </label>
 
-            <label class="flex-column-start" for="mahogany-special-edition">
-              <h4 class="h4-title text-700">Mahogany Special Edition</h4>
-              <p class="text-mcyan text-700">Pledge $200 or more</p>
-            </label>
+              <div class="flex-row-between w-100">
+                <label class="text-radio" for="black-stand">
+                  <h4 class="h4-title text-black text-700">Black Edition Stand</h4>
+                  <h4 class="h4-title text-mcyan text-700">Pledge $75 or more</h4>
+                </label>
+                <p class="total-pledge-desktop"><span class="h3-title text-700">64 </span> left</p>
+              </div>
+            </div>
+
+            <p>You get a Black Special Edition computer stand and a personal thank you. You`ll be added to our Backer
+              member list. Shipping is included.</p>
+
+            <p class="total-pledge-mobile"><span class="h3-title text-700">64 </span> left</p>
+
+            <!-- Selected pledge start -->
+            <div class="confirm-box line-top-100 align-text-c padding-t-20">
+              <div class="title-confirm-box">
+                <p>Enter your pledge</p>
+              </div>
+
+              <div class="submit-box">
+                <form class="input-box flex-row-center">
+                  <p class="text-700">$ &nbsp;&nbsp;<span><input class="input-number h4-title text-black text-700"
+                        type="number" name="black-edition-stand" id="black-edition-stand" min="75" value="75"></span>
+                  </p>
+                </form>
+                <button class="btn btn-mcyan submit">Continue</button>
+              </div>
+              <p class="warning-text"></p>
+            </div>
+            <!-- Selected pledge end -->
           </div>
 
-          <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to
-            our Backer member list. Shipping is included.</p>
+          <div class="pledge-card content-box grid-contents opacity-50">
+            <div class="flex-row-start">
+              <label class="radio-input">
+                <input class="radio-btn" type="radio" name="mahogany-special-edition" id="mahogany-special-edition"
+                  disabled>
+                <span class="radio-control"></span>
+              </label>
 
-          <p><span class="h3-title text-700">0 </span> left</p>
+              <div class="flex-row-between w-100">
+                <label class="text-radio" for="mahogany-special-edition">
+                  <h4 class="h4-title text-black text-700">Mahogany Special Edition</h4>
+                  <h4 class="h4-title text-mcyan text-700">Pledge $200 or more</h4>
+                </label>
+                <p class="total-pledge-desktop"><span class="h3-title text-700">0 </span> left</p>
+              </div>
+            </div>
 
-          <!-- Selected pledge  start -->
-          <!-- Enter your pledge
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You`ll be added
+              to
+              our Backer member list. Shipping is included.</p>
+
+            <p class="total-pledge-mobile"><span class="h3-title text-700">0 </span> left</p>
+
+            <!-- Selected pledge  start -->
+            <!-- Enter your pledge
           $200
           Continue -->
-          <!-- Selected pledge end -->
+            <!-- Selected pledge end -->
+          </div>
         </div>
       </div>
 
       <!-- Success modal start -->
       <div id="success-modal" class="content-box grid-contents align-text-c">
         <div>
-          <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#3CB3AB" cx="32" cy="32" r="32"/><path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24"/></g></svg>
+          <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#3CB3AB" cx="32" cy="32" r="32" />
+              <path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24" />
+            </g>
+          </svg>
         </div>
         <h3 class="h3-title text-700">Thanks for your support!</h3>
-        <p class="gap-text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+        <p class="gap-text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide.
+          You will get an email once our campaign is completed.</p>
         <div>
           <button id="got-it-btn" class="btn btn-mcyan">Got it!</button>
         </div>
@@ -276,4 +311,5 @@
     <!-- main.js -->
     <script src="./styles/js/main.js"></script>
   </body>
+
 </html>

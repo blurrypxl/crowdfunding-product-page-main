@@ -24,10 +24,25 @@ showNav.onclick = () => {
 
 /*==== # Bookmark Button Section ====*/
 let bookmarkBtn = document.getElementById('bookmark');
+let bookmarkIcon = document.querySelector('.bookmark-icon');
+let bookmarkDesk = document.querySelector('.bookmark-desktop');
+let numTrigger = 1;
+let arrTrigger = [];
 
 bookmarkBtn.onclick = () => {
   // console.log("bookmark button clicked");
   toggleBtn(bookmarkBtn, 'marked');
+  toggleBtn(bookmarkIcon, 'marked');
+  toggleBtn(bookmarkDesk, 'marked');
+
+  // Memasukan nilai variable numTrigger kedalam arrTrigger untuk men-trigger bookmarkBtn merubah text pada element bookmarkDesk.
+  if (arrTrigger.length < 1) {
+    bookmarkDesk.innerHTML = '<p style="color:hsl(176, 72%, 28%)">Bookmarked</p>';
+    arrTrigger.push(numTrigger);
+  } else if (arrTrigger.length > 0) {
+    bookmarkDesk.innerHTML = '<p>Bookmark</p>';
+    arrTrigger.splice(0, 1);
+  }
 };
 
 /*==== # Radio Button Section ====*/
@@ -58,7 +73,7 @@ function radioButton(index) {
       contentChecked.splice(0, 1);
     }
 
-    confirmBox[index -1].style.display = 'block';
+    confirmBox[index -1].style.display = 'flex';
 
     submit[index -1].onclick = () => {
       if (inputPledge[index -1].value < minPledge[index -1]) {
