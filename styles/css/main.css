@@ -180,6 +180,9 @@
   /* margin: 0.2em 0; */
   width: fit-content;
 }
+.modal-btn:hover {
+  cursor: pointer;
+}
 .btn-mcyan {
   border-radius: 50px;
   background-color: var(--Moderate-cyan);
@@ -187,6 +190,10 @@
   color: white;
   font-weight: 500;
   font-size: 4vw;
+}
+.btn-mcyan:hover {
+  background-color: var(--Dark-cyan);
+  cursor: pointer;
 }
 .btn-dgrey {
   border-radius: 50px;
@@ -438,6 +445,7 @@
   align-items: center;
   position: relative;
   width: fit-content;
+  cursor: pointer;
   /* width: 13em; */
   animation-name: pop1;
   animation-duration: 250ms;
@@ -460,6 +468,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
+  cursor: pointer;
   width: 50px;
   height: 50px;
   z-index: 1;
@@ -525,7 +534,7 @@
 
 /* Modals - Start */
 .modal-container {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   /* overflow: hidden scroll; */
   display: none;
   position: fixed;
@@ -643,5 +652,12 @@
 /* Modals - End */
 
 /* Footer */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 5em;
+}
+.attribution a {
+  font-weight: 700;
+  color: var(--Moderate-cyan);
+}
