@@ -159,11 +159,11 @@
   color: black;
 }
 .h3-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: black;
 }
 .h4-title {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 .padding-text {
   padding: 0.5em;
@@ -634,6 +634,24 @@
   }
   .total-pledge-mobile {
     display: none;
+  }
+}
+.pledge-reward-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pledge-reward-box p {
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 519px) {
+  .pledge-reward-box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .pledge-reward-box p {
+    margin-bottom: 0.1em;
   }
 }
 /* .pledge-card.pledge-card-open {
